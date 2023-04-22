@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            border: 2px solid red;
+            display: grid;
+            margin: 20px auto;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-gap: 20px;
+        }
+
+        .header {
+            background-color: #9967f1;
+            padding: 20px;
+            grid-column: 1/-1;
+        }
+
+        .header h2 {
+            margin-left: 650px;
+            color: rgb(60, 18, 18);
+            font-size: 50px;
+        }
+
+        .box1 {
+            background-color: #eb3077;
+        }
+
+        .box1 img {
+            margin-left: 35px;
+            margin-top: 35px;
+        }
+
+        .box2 {
+            background-color: #d2f358;
+            grid-column: span 2;
+        }
+
+        .box2 img {
+            margin-left: 150px;
+            margin-bottom: 35px;
+            margin-top: 35px;
+        }
+
+        .box3 {
+            background-color: #67f1a7;
+        }
+
+        .box3 img {
+            margin-left: 35px;
+            margin-top: 35px;
+        }
+
+        .main {
+            background-color: #ec7a2f;
+        }
+
+        .main img {
+            margin-left: 35px;
+            margin-top: 35px;
+        }
+
+        .side {
+            background-color: #cd7bf4;
+            grid-row: span 2;
+        }
+
+        .side h2 {
+            margin-top: 350px;
+            margin-left: 15px;
+        }
+
+        .footer {
+            background-color: #fa8a8a;
+            grid-column: span 2;
+        }
+
+        .footer img {
+            margin-top: 35px;
+            margin-left: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="header">
+            <h2>My Picture Gallery</h2>
+        </div>
+        <div class="box1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQX9C0MDBZzSANoAt19yCz-2P2czBKeo9QfPDNs4Vd&s"
+                alt="">
+        </div>
+        <div class="box2">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/door-shaded-by-bougainvillea-porquerolles-france-royalty-free-image-1653423252.jpg?crop=0.668xw:1.00xh;0.165xw,0&resize=980:*"
+                width="200px" alt="">
+        </div>
+        <div class="box3">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/close-up-of-blossoming-rose-flower-royalty-free-image-1580853844.jpg?crop=0.668xw:1.00xh;0.248xw,0&resize=980:*"
+                width="200px" alt="">
+        </div>
+        <div class="main">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/waterlily-1508785045.jpg?crop=1.00xw:0.669xh;0,0.193xh&resize=980:*"
+                width="200px" alt="">
+        </div>
+        <div class="side">
+            <h2>"Flowers are beautiful"</h2>
+        </div>
+        <div class="footer">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/anem-anemone-coronaria-news-photo-1578193956.jpg?crop=1xw:0.94549xh;center,top&resize=980:*"
+                width="200px" alt="">
+        </div>
+    </main>
+</body>
+
+</html>
